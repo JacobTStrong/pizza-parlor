@@ -13,7 +13,7 @@
   <div class="container">
     <div class="box1">
       <h1>Pizza Materialization Kiosk</h1>
-      <h2>Welcome aboard the U.S.S. Murphy! We know that space can be a lonely place. Take a trip back home and create a pizza of your own!</h2>
+      <h2>Welcome aboard the U.S.S. Murphy! The federation knows that space can be a lonely place. Take a trip back home and create a pizza of your own!</h2>
 
       <button class="button" id="startCooking">Start</button>
     </div>
@@ -25,10 +25,146 @@
         <button class="button" id="toOriginStory">Next</button>
       </div>
       <div id="originStory">
-        <p>The Traveler: "I joined the federation in search of a new life. One that put me in the driver's seat. I knew that I'd be leaving it all behind and at the time I was willing to make that sacrifice... But as the old saying goes: "You don't know what you've got until it's gone."</p>
+        <p>The Traveler: "I joined the pizza federation in search of a new life. One that put me in the driver's seat. I knew that I'd be leaving it all behind and at the time I was willing to make that sacrifice... But as the old saying goes... You don't know what you've got until it's gone.</p>
 
-        <button class="button" id="startCooking">Start</button>
+        <button class="button" id="buildPizza">Next</button>
       </div>
+    </div>
+    <div id="endIntro">
+      <p>The Traveler: "I'll never forget the pizza. Every time I needed to remind myself who I was or where I came from, I'd walk up to that kiosk and I would place my order. No matter how unsure things got, one thing was certain. That kiosk would always have my favorite pizza..."</p>
+
+      <button class="button" id="startAssembling">Next</button>
+    </div>
+    <form id="pizzaForm" name="pizzaForm">
+      <div id="pizzaSize">
+        <label for="sizeSelection">The Traveler: "I always ordered a..."</label>
+        <select class="sizeSelection">
+          <option>Select a size</option>
+          <option value="small">Small ($8)</option>
+          <option value="medium">Medium ($11)</option>
+          <option value="large">Large ($14)</option>
+          <option valaue="xLarge">Extra Large ($19)</option>
+        </select>
+        <br>
+        <button class="button" id="sizeSelected">Next</button>
+      </div>
+      <div id="pizzaCrust">
+        <label for="crustSelection">The Traveler: "on..."</label>
+        <select class="crustSelection">
+          <option>Select a crust</option>
+          <option value="regularCrust">Regular Crust (no added cost)</option>
+          <option value="stuffedCrust">Stuffed Crust (+$3)</option>
+          <option value="thinCrust">Thin Crust (+$1)</option>
+        </select>
+        <br>
+        <button class="button" id="crustSelected">Next</button>
+      </div>
+      <div id="pizzaSauce">
+        <label for="sauceSelection">The Traveler: "with..."</label>
+        <select class="sauceSelection">
+          <option>Select a sauce</option>
+          <option value="marinara">Marinara Sauce(no added cost)</option>
+          <option value="alfredo">Alfredo Sauce (+$2)</option>
+          <option value="bbq">Barbecue Sauce (+$2)</option>
+          <option value="pesto">Pesto Sauce (+$2)</option>
+        </select>
+        <br>
+        <button class="button" id="sauceSelected">Next</button>
+      </div>
+      <div id="pizzaToppings">
+        <p>The Traveler: "And I'd always throw on all my favorite toppings because they all only cost a dollar..."</p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="mozzarella">Mozzarella Cheese
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="crueltyFree">Cruelty Free Cheese
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="sausage">Sausage
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="bacon">Bacon
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="chicken">Chicken
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="onions">Red Onions
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="olives">Black Olives
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="arugula">Arugula
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="garlic">Roasted Garlic
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="tomatoes">Roma Tomatoes
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="pineapple">Pineapple
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="toppings" value="peppers">Bell Peppers
+          </label>
+          <br>
+          <button class="button" id="toppingsSelected">Next</button>
+        </div>
+      </div>
+      <button type="submit" class="button">Next</button>
+    </form>
+    <div id="outroPartOne">
+      <p>The Traveler: "I'd sit in the observation deck, eat my pizza, and stare off into the stars. That's about as close as I could get to home.That pizza... It always brought back memories..."</p>
+      <br>
+      <button class="button" id="outroButtonOne">Next</button>
+    </div>
+    <div id="outroPartTwo">
+      <p>Memories of the people...</p>
+      <br>
+      <button class="button" id="outroButtonTwo">Next</button>
+    </div>
+    <div id="outroPartThree">
+      <p>Memories of the places...</p>
+      <br>
+      <button class="button" id="outroButtonThree">Next</button>
+    </div>
+    <div id="outroPartFour">
+      <p>the... things...</p>
+      <br>
+      <button class="button" id="outroButtonFour">Next</button>
+    </div>
+    <div id="outroPartFive">
+      <p>To feel all of that for only <span id="totalCost"></span>? It kept me going... What more could I have asked for?</p>
     </div>
   </div>
 </body>
