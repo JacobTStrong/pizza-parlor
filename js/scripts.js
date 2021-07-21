@@ -16,4 +16,11 @@ Pizza.prototype.orderTotal = function() {
   } else {
     this.total = 19;
   }
+  if (this.crust === 'stuffedCrust') {
+    this.total += 3;
+  } else if (this.crust === 'thinCrust') {
+    this.total += 1;
+  } else {
+    this.total += 0;
+  }
 };
