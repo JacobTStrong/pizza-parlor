@@ -4,13 +4,17 @@ Describe: Pizza()
 
 Test: "It should create an object for a pizza with user-determined size, crust, sauce, and toppings"
 Code: let myPizza = new Pizza("Extra Large", "Regular Crust", "Marinara Sauce", "Mozzarella Cheese");
-Expect (myPie.toEqual(Pizza {size: "Extra Large", crust:"Regular Crust", sauce: "Marinara Sauce", toppings: "Mozzarella Cheese"});
+Expect (myPizza.toEqual(Pizza {size: "Extra Large", crust:"Regular Crust", sauce: "Marinara Sauce", toppings: "Mozzarella Cheese"});
 
 Describe Pizza.prototype.orderTotal()
 
 Test: "It should set an initial price based on the size of the pizza"
 Code: let myPizza = new Pizza('small');
 Expect (myPizza.orderTotal().toEqual(Pizza {size: 'small', total: 8});
+
+Test: "It should add to the total price based on which crust is selected"
+Code: let myPizza = new Pizza('small', 'thinCrust');
+Expect (myPizza.orderTotal().toEqual(Pizza {size: 'small', crust: 'thinCrust', total: 9});
 
 # Pizzas in Space
 
