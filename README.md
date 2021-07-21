@@ -6,6 +6,12 @@ Test: "It should create an object for a pizza with user-determined size, crust, 
 Code: let myPizza = new Pizza("Extra Large", "Regular Crust", "Marinara Sauce", "Mozzarella Cheese");
 Expect (myPie.toEqual(Pizza {size: "Extra Large", crust:"Regular Crust", sauce: "Marinara Sauce", toppings: "Mozzarella Cheese"});
 
+Describe Pizza.prototype.orderTotal()
+
+Test: "It should set an initial price based on the size of the pizza"
+Code: let myPizza = new Pizza('small');
+Expect (myPizza.orderTotal().toEqual(Pizza {size: 'small', total: 8});
+
 # Pizzas in Space
 
 #### An independent project made to practice Object-Oriented JavaScript.
