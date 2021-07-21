@@ -16,6 +16,10 @@ Test: "It should add to the total price based on which crust is selected"
 Code: let myPizza = new Pizza('small', 'thinCrust');
 Expect (myPizza.orderTotal().toEqual(Pizza {size: 'small', crust: 'thinCrust', total: 9});
 
+Test: "It should add to the total price based on which sauce is selected"
+Code: let myPizza = new Pizza('small', 'thinCrust', 'alfredo');
+Expect (myPizza.orderTotal().toEqual(Pizza {size: 'small', crust: 'thinCrust', sauce: 'alfredo', total: 11});
+
 # Pizzas in Space
 
 #### An independent project made to practice Object-Oriented JavaScript.
