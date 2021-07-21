@@ -23,4 +23,9 @@ Pizza.prototype.orderTotal = function() {
   } else {
     this.total += 0;
   }
+  if (this.sauce === 'marinara') {
+    this.total += 0;
+  } else {
+    this.total +=2;
+  }
 };
