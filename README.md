@@ -1,4 +1,10 @@
+//Business Logic
 
+Describe: Pizza()
+
+Test: "It should create an object for a pizza with user-determined size, crust, sauce, and toppings"
+Code: let myPizza = new Pizza("Extra Large", "Regular Crust", "Marinara Sauce", "Mozzarella Cheese");
+Expect (myPie.toEqual(Pizza {size: "Extra Large", crust:"Regular Crust", sauce: "Marinara Sauce", toppings: "Mozzarella Cheese"});
 
 # Pizzas in Space
 
