@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+
+#enterTheTraveler {
+  display: none;
+}
+
+#originStory {
+  display: none;
+}
+
+#endIntro {
+  display: none;
+}
+
+#pizzaSize {
+  display: none;
+}
+
+#pizzaCrust {
+  display: none;
+}
+
+#pizzaSauce {
+  display: none;
+}
+
+#pizzaToppings {
+  display: none;
+}
+
+#outroPartOne {
+  display: none;
+}
+
+#outroPartTwo {
+  display: none;
+}
+
+#outroPartThree {
+  display: none;
+}
+
+#outroPartFour {
+  display: none;
+}
+
+#outroPartFive {
+  display: none;
+}
+
+.button {
+  margin-left: 48%;
+}
+
+#submitForm {
+  margin-left: 48%;
+}
