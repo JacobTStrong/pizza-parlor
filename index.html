@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <hmtl lang="en-US">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -11,7 +11,7 @@
 <body>
 
   <div class="container">
-    <div class="box1">
+    <div id="header">
       <h1>Pizza Materialization Kiosk</h1>
       <h2>Welcome aboard the U.S.S. Murphy! The federation knows that space can be a lonely place. Take a trip back home and create a pizza of your own!</h2>
 
@@ -47,7 +47,7 @@
           <option valaue="xLarge">Extra Large ($19)</option>
         </select>
         <br>
-        <button class="button" id="sizeSelected">Next</button>
+        <button class="button" type="button" id="sizeSelected">Next</button>
       </div>
 
       <div id="pizzaCrust">
@@ -59,7 +59,7 @@
           <option value="thinCrust">Thin Crust (+$1)</option>
         </select>
         <br>
-        <button class="button" id="crustSelected">Next</button>
+        <button class="button" type="button" id="crustSelected">Next</button>
       </div>
 
       <div id="pizzaSauce">
@@ -72,11 +72,11 @@
           <option value="pesto">Pesto Sauce (+$2)</option>
         </select>
         <br>
-        <button class="button" id="sauceSelected">Next</button>
+        <button class="button" type="button" id="sauceSelected">Next</button>
       </div>
 
       <div id="pizzaToppings">
-        <p>The Traveler: "And I'd always throw on all my favorite toppings because they all only cost a dollar..."</p>
+        <p>The Traveler: "And I'd always throw on all my favorite toppings because they would give them to me for free..."</p>
         <div class="checkbox">
           <label>
             <input type="checkbox" name="toppings" value="mozzarella">Mozzarella Cheese
@@ -142,9 +142,9 @@
             <input type="checkbox" name="toppings" value="peppers">Bell Peppers
           </label>
           <br>
+          <button type="submit" id="submitForm">Next</button>
         </div>
       </div>
-      <button type="submit" class="button">Next</button>
     </form>
 
     <div id="outroPartOne">
@@ -169,10 +169,9 @@
     </div>
     <div id="outroPartFive">
       <p>To feel all of that for only <span id="totalCost"></span>? It kept me going... What more could I have asked for?</p>
+
+      <button class="button" id="refreshPage">Start Over</button>
     </div>
-
-    <button class="button" id="refreshPage">Start Over</button>
-
   </div>
 </body>
 </hmtl>
